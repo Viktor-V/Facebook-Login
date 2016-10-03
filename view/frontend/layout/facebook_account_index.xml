@@ -13,19 +13,19 @@
     <update handle="customer_account"/>
 
     <head>
-        <title>Facebook Login</title>
+        <title>Facebook Account</title>
         <css src="Scandiweb_FacebookLogin::css/facebook.css" media="all"/>
     </head>
 
     <body>
         <referenceBlock name="page.main.title">
             <action method="setPageTitle">
-                <argument translate="true" name="title" xsi:type="string">Facebook Login</argument>
+                <argument translate="true" name="title" xsi:type="string">Facebook Account</argument>
             </action>
         </referenceBlock>
 
         <referenceContainer name="content">
-            <block class="Scandiweb\FacebookLogin\Block\Account" name="facebook.account" template="Scandiweb_FacebookLogin::account.phtml"/>
+            <block class="Scandiweb\FacebookLogin\Block\Account" name="facebook.account" template="Scandiweb_FacebookLogin::account.phtml" cacheable="false"/>
         </referenceContainer>
 
         <referenceContainer name="page.messages">
